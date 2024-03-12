@@ -37,30 +37,35 @@ public class Main {
 
 //        Differences between primitive and non-primitive data type
 
-        int a = 10;
-        int b = a;
+//        int a = 10;
+//        int b = a;
+//
+//        a = 100;
+//
+//        System.out.println("- a = " + a +  " - b = " + b);
+//
+//        Person alex = new Person("alex");
+//        Person mariam = alex;
+//
+//        System.out.println("Before changing alex");
+//        System.out.println(alex.name + " "  + mariam.name);
+//
+//        mariam.name = "Mariam";
+//
+//        System.out.println("After changing alex");
+//        System.out.println(alex.name + " "  + mariam.name);
+//        Naming Variables
 
-        a = 100;
+        int subscriberCount = 1_000_000; // is easy to read this than
 
-        System.out.println("- a = " + a +  " - b = " + b);
-
-        Person alex = new Person("alex");
-        Person mariam = alex;
-
-        System.out.println("Before changing alex");
-        System.out.println(alex.name + " "  + mariam.name);
-
-        mariam.name = "Mariam";
-
-        System.out.println("After changing alex");
-        System.out.println(alex.name + " "  + mariam.name);
+        int subscribercount = 1_000_000; //this makes it difficult to read
     }
 
-    static class Person {
-        String name;
-
-        Person(String name) {
-            this.name = name;
-        }
-    }
+//    static class Person {
+//        String name;
+//
+//        Person(String name) {
+//            this.name = name;
+//        }
+//    }
 }
