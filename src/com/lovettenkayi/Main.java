@@ -56,9 +56,17 @@ public class Main {
 //        System.out.println(alex.name + " "  + mariam.name);
 //        Naming Variables
 
-        int subscriberCount = 1_000_000; // is easy to read this than
+//        int subscriberCount = 1_000_000; // is easy to read this than
+//
+//        int subscribercount = 1_000_000; //this makes it difficult to read
 
-        int subscribercount = 1_000_000; //this makes it difficult to read
+        // String Class
+        String name =  new String("Thedev.init");
+        System.out.println(name.toUpperCase()); //toUpperCase() is a method of an object
+        System.out.println(name.charAt(0));
+        String code = new String("dev");
+        System.out.println(name.contains(code));
+        System.out.println(name.equals(code));
     }
 
 //    static class Person {
