@@ -1,4 +1,5 @@
 package com.lovettenkayi;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Date;
 
@@ -61,12 +62,19 @@ public class Main {
 //        int subscribercount = 1_000_000; //this makes it difficult to read
 
         // String Class
-        String name =  new String("Thedev.init");
-        System.out.println(name.toUpperCase()); //toUpperCase() is a method of an object
-        System.out.println(name.charAt(0));
-        String code = new String("dev");
-        System.out.println(name.contains(code));
-        System.out.println(name.equals(code));
+//        String name =  new String("Thedev.init");
+//        System.out.println(name.toUpperCase()); //toUpperCase() is a method of an object
+//        System.out.println(name.charAt(0));
+//        String code = new String("dev");
+//        System.out.println(name.contains(code));
+//        System.out.println(name.equals(code));
+
+        // Packages and imports
+        String name = new String(""); //Any import from java.lang does not get imported
+        Date date = new Date();
+        java.sql.Date dateSql = new java.sql.Date(1);
+        LocalDate localDate = LocalDate.now();
+        LocalDateTime localDateTime = LocalDateTime.now();
     }
 
 //    static class Person {
