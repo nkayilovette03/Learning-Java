@@ -70,11 +70,27 @@ public class Main {
 //        System.out.println(name.equals(code));
 
         // Packages and imports
-        String name = new String(""); //Any import from java.lang does not get imported
-        Date date = new Date();
-        java.sql.Date dateSql = new java.sql.Date(1);
-        LocalDate localDate = LocalDate.now();
-        LocalDateTime localDateTime = LocalDateTime.now();
+//        String name = new String(""); //Any import from java.lang does not get imported
+//        Date date = new Date();
+//        java.sql.Date dateSql = new java.sql.Date(1);
+//        LocalDate localDate = LocalDate.now();
+//        LocalDateTime localDateTime = LocalDateTime.now();
+
+        // Reserved Keywords
+        // class, package, static, void, public, final
+            // Arithmetic Operations
+        int ten = 10;
+        int two = 2;
+
+        int addition = ten + two;
+        int subtract = ten - two;
+        int multiply = ten * two;
+        int modulus = ten % two;
+
+        System.out.println(addition);
+        System.out.println(subtract);
+        System.out.println(multiply);
+        System.out.println(modulus);
     }
 
 //    static class Person {
