@@ -93,12 +93,23 @@ public class Main {
 //        System.out.println(modulus);
 
     // Math
-        System.out.println(Math.abs(-10));
-        System.out.println(Math.max(-10, 2.5));
-        System.out.println(Math.min(30, 25));
-        System.out.println((int) Math.pow(5, 2));
-        System.out.println((int) Math.sqrt(25));
-        System.out.println(Math.PI);
+//        System.out.println(Math.abs(-10));
+//        System.out.println(Math.max(-10, 2.5));
+//        System.out.println(Math.min(30, 25));
+//        System.out.println((int) Math.pow(5, 2));
+//        System.out.println((int) Math.sqrt(25));
+//        System.out.println(Math.PI);
+
+    // Comparison Operators
+        int lovette = 21;
+        int loveline = 26;
+
+        System.out.println(lovette > loveline);
+        System.out.println(lovette >= loveline);
+        System.out.println(lovette < loveline);
+        System.out.println(lovette <= loveline);
+        System.out.println(lovette == loveline);
+        System.out.println(lovette != loveline);
     }
 
 //    static class Person {
