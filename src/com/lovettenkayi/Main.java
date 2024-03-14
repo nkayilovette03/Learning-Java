@@ -101,15 +101,23 @@ public class Main {
 //        System.out.println(Math.PI);
 
     // Comparison Operators
-        int lovette = 21;
-        int loveline = 26;
+//        int lovette = 21;
+//        int loveline = 26;
+//
+//        System.out.println(lovette > loveline);
+//        System.out.println(lovette >= loveline);
+//        System.out.println(lovette < loveline);
+//        System.out.println(lovette <= loveline);
+//        System.out.println(lovette == loveline);
+//        System.out.println(lovette != loveline);
 
-        System.out.println(lovette > loveline);
-        System.out.println(lovette >= loveline);
-        System.out.println(lovette < loveline);
-        System.out.println(lovette <= loveline);
-        System.out.println(lovette == loveline);
-        System.out.println(lovette != loveline);
+        boolean isAdult = false;
+        boolean isStudent = true;
+        boolean isMember = true;
+
+        System.out.println(isAdult && isStudent);
+        System.out.println(!isAdult || isStudent);
+        System.out.println((!isAdult && isStudent) && isMember);
     }
 
 //    static class Person {
