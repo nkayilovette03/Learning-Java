@@ -1,7 +1,7 @@
 package com.lovettenkayi;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Date;
+//import java.time.LocalDate;
+//import java.time.LocalDateTime;
+//import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
@@ -79,18 +79,26 @@ public class Main {
         // Reserved Keywords
         // class, package, static, void, public, final
             // Arithmetic Operations
-        int ten = 10;
-        int two = 2;
+//        int ten = 10;
+//        int two = 2;
+//
+//        int addition = ten + two;
+//        int subtract = ten - two;
+//        int multiply = ten * two;
+//        int modulus = ten % two;
+//
+//        System.out.println(addition);
+//        System.out.println(subtract);
+//        System.out.println(multiply);
+//        System.out.println(modulus);
 
-        int addition = ten + two;
-        int subtract = ten - two;
-        int multiply = ten * two;
-        int modulus = ten % two;
-
-        System.out.println(addition);
-        System.out.println(subtract);
-        System.out.println(multiply);
-        System.out.println(modulus);
+    // Math
+        System.out.println(Math.abs(-10));
+        System.out.println(Math.max(-10, 2.5));
+        System.out.println(Math.min(30, 25));
+        System.out.println((int) Math.pow(5, 2));
+        System.out.println((int) Math.sqrt(25));
+        System.out.println(Math.PI);
     }
 
 //    static class Person {
