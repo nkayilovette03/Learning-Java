@@ -3,6 +3,8 @@ package com.lovettenkayi;
 //import java.time.LocalDateTime;
 //import java.util.Date;
 
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
         // Primitive Data Types
@@ -131,15 +133,43 @@ public class Main {
 //    }
 
     // Ternary Operator
-    int age = 17;
+//    int age = 17;
+//
+//    String message = age >= 18 ?
+//            "Hooray..., I am an adult" :
+//            age >= 16 || age <= 17  ?
+//                    "I am almost an adult" :
+//                    "I am not an adult";
+//
+//        System.out.println(message);
+    // Switch Statement
+        String gender = "FEMALE".toLowerCase();
 
-    String message = age >= 18 ?
-            "Hooray..., I am an adult" :
-            age >= 16 || age <= 17  ?
-                    "I am almost an adult" :
-                    "I am not an adult";
+//        if(gender.equals("FEMALE")){
+//            // DO something
+//        } else if(gender.equals("MALE")) {
+//            // DO something
+//        } else if(gender.equals("PREFER_NOT_TO_SAY")){
+//            // DO another thing
+//        } else {
+//
+//        }
 
-        System.out.println(message);
+
+        switch (gender) {
+            case "FEMALE":
+                System.out.println("I am a female");
+                break;
+            case "MALE":
+                System.out.println("I am a male");
+                break;
+            case "PREFER_NOT_TO_SAY":
+                System.out.println("I prefer not to say");
+                break;
+            default:
+                System.out.println("Unknown gender");
+
+        }
     }
 
 //    static class Person {
