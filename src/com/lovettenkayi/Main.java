@@ -111,13 +111,24 @@ public class Main {
 //        System.out.println(lovette == loveline);
 //        System.out.println(lovette != loveline);
 
-        boolean isAdult = false;
-        boolean isStudent = true;
-        boolean isMember = true;
+//        boolean isAdult = false;
+//        boolean isStudent = true;
+//        boolean isMember = true;
+//
+//        System.out.println(isAdult && isStudent);
+//        System.out.println(!isAdult || isStudent);
+//        System.out.println((!isAdult && isStudent) && isMember);
 
-        System.out.println(isAdult && isStudent);
-        System.out.println(!isAdult || isStudent);
-        System.out.println((!isAdult && isStudent) && isMember);
+    // If statements
+    int age = 90;
+
+    if(age >= 18) {
+        System.out.println("Hooray..., i am an adult");
+    } else if (age >= 16 && age < 18) {
+        System.out.println("I am almost an adult");
+    } else {
+        System.out.println("I am not an adult");
+    }
     }
 
 //    static class Person {
