@@ -3,6 +3,7 @@ package com.lovettenkayi;
 //import java.time.LocalDateTime;
 //import java.util.Date;
 
+import java.util.Arrays;
 import java.util.Locale;
 
 public class Main {
@@ -143,7 +144,7 @@ public class Main {
 //
 //        System.out.println(message);
     // Switch Statement
-        String gender = "FEMALE".toLowerCase();
+//        String gender = "FEMALE".toLowerCase();
 
 //        if(gender.equals("FEMALE")){
 //            // DO something
@@ -156,20 +157,33 @@ public class Main {
 //        }
 
 
-        switch (gender) {
-            case "FEMALE":
-                System.out.println("I am a female");
-                break;
-            case "MALE":
-                System.out.println("I am a male");
-                break;
-            case "PREFER_NOT_TO_SAY":
-                System.out.println("I prefer not to say");
-                break;
-            default:
-                System.out.println("Unknown gender");
+//        switch (gender) {
+//            case "FEMALE":
+//                System.out.println("I am a female");
+//                break;
+//            case "MALE":
+//                System.out.println("I am a male");
+//                break;
+//            case "PREFER_NOT_TO_SAY":
+//                System.out.println("I prefer not to say");
+//                break;
+//            default:
+//                System.out.println("Unknown gender");
+//
+//        }
 
-        }
+    // Arrays
+        int [] numbers = {2, 0, 1, 100, 36};
+        String [] names = {"Lovette", "Desmond"};
+
+//        numbers[0] = 2;
+//        numbers[1] = zero;
+//        numbers[2] = one;
+
+        System.out.println(Arrays.toString(numbers));
+        System.out.println(numbers.length);
+        System.out.println(Arrays.toString(names));
+        System.out.println(names.length);
     }
 
 //    static class Person {
