@@ -185,16 +185,30 @@ public class Main {
 //        System.out.println(Arrays.toString(names));
 //        System.out.println(names.length);
         // Loops
-        int [] numbers = {2, 0, 1, 3, 100, 79, 4, 90, 77};
-        String [] names = {"Lovette", "Stega"};
+//        int [] numbers = {2, 0, 1, 3, 100, 79, 4, 90, 77};
+//        String [] names = {"Lovette", "Stega"};
+//
+//        Arrays.stream(numbers).forEach(System.out::println);
+//        Arrays.stream(names).forEach(System.out::println);
+//
+//
+//        for (int i = 0; i < numbers.length; i++) {
+//            System.out.println(numbers[i]);
+//        }
 
-        Arrays.stream(numbers).forEach(System.out::println);
-        Arrays.stream(names).forEach(System.out::println);
+        // Break and Continue
+        String [] names = {"Anna", "Ali", "Bob", "Mike"};
 
-
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.println(numbers[i]);
+        for(String name: names) {
+//            if(name.equals("Bob")) {
+//                break;
+//            }
+            if(name.startsWith("A")) {
+                continue;
+            }
+            System.out.println(name);
         }
+
     }
 
 //    static class Person {
