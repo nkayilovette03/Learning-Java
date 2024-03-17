@@ -228,16 +228,26 @@ public class Main {
 //        } while(count <= 20);
 
         //Scanner
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("What is your name?");
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("What is your name?");
+//
+//        String userName = scanner.nextLine();
+//        System.out.println("Hello " + userName);
+//
+//        System.out.println("How old are you?");
+//        int age = scanner.nextInt();
+//        int year = LocalDate.now().minusYears(age).getYear();
+//        System.out.println(userName + " you were born in " + year);
 
-        String userName = scanner.nextLine();
-        System.out.println("Hello " + userName);
+        // Understanding Methods
+        char [] letters = {'A', 'A', 'B', 'C', 'D', 'D', 'D'};
+        int count = countOccurrences(letters);
+        System.out.println(count);
+    }
 
-        System.out.println("How old are you?");
-        int age = scanner.nextInt();
-        int year = LocalDate.now().minusYears(age).getYear();
-        System.out.println(userName + " you were born in " + year);
+    public static int countOccurrences (char [] letters) {
+        System.out.println("method countOccurrences was invoked");
+        return 1;
     }
 
 //    static class Person {
