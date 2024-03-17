@@ -210,13 +210,20 @@ public class Main {
 //        }
 
         // While Loop
+//
+//        int count = 0;
+//
+//        while (count <= 20) {
+//            System.out.println("Count " + count);
+//            count++;
+//        }
+        // Do While Loops
+        int count = 21;
 
-        int count = 0;
-
-        while (count <= 20) {
-            System.out.println("Count " + count);
+        do {
+            System.out.println(count);
             count++;
-        }
+        } while(count <= 20);
     }
 
 //    static class Person {
