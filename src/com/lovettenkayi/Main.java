@@ -197,18 +197,26 @@ public class Main {
 //        }
 
         // Break and Continue
-        String [] names = {"Anna", "Ali", "Bob", "Mike"};
-
-        for(String name: names) {
-//            if(name.equals("Bob")) {
-//                break;
+//        String [] names = {"Anna", "Ali", "Bob", "Mike"};
+//
+//        for(String name: names) {
+////            if(name.equals("Bob")) {
+////                break;
+////            }
+//            if(name.startsWith("A")) {
+//                continue;
 //            }
-            if(name.startsWith("A")) {
-                continue;
-            }
-            System.out.println(name);
-        }
+//            System.out.println(name);
+//        }
 
+        // While Loop
+
+        int count = 0;
+
+        while (count <= 20) {
+            System.out.println("Count " + count);
+            count++;
+        }
     }
 
 //    static class Person {
