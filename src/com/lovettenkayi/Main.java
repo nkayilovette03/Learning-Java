@@ -3,8 +3,10 @@ package com.lovettenkayi;
 //import java.time.LocalDateTime;
 //import java.util.Date;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -218,12 +220,24 @@ public class Main {
 //            count++;
 //        }
         // Do While Loops
-        int count = 21;
+//        int count = 21;
+//
+//        do {
+//            System.out.println(count);
+//            count++;
+//        } while(count <= 20);
 
-        do {
-            System.out.println(count);
-            count++;
-        } while(count <= 20);
+        //Scanner
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is your name?");
+
+        String userName = scanner.nextLine();
+        System.out.println("Hello " + userName);
+
+        System.out.println("How old are you?");
+        int age = scanner.nextInt();
+        int year = LocalDate.now().minusYears(age).getYear();
+        System.out.println(userName + " you were born in " + year);
     }
 
 //    static class Person {
