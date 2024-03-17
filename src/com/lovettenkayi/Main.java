@@ -173,17 +173,28 @@ public class Main {
 //        }
 
     // Arrays
-        int [] numbers = {2, 0, 1, 100, 36};
-        String [] names = {"Lovette", "Desmond"};
+//        int [] numbers = {2, 0, 1, 100, 36};
+//        String [] names = {"Lovette", "Desmond"};
 
 //        numbers[0] = 2;
 //        numbers[1] = zero;
 //        numbers[2] = one;
 
-        System.out.println(Arrays.toString(numbers));
-        System.out.println(numbers.length);
-        System.out.println(Arrays.toString(names));
-        System.out.println(names.length);
+//        System.out.println(Arrays.toString(numbers));
+//        System.out.println(numbers.length);
+//        System.out.println(Arrays.toString(names));
+//        System.out.println(names.length);
+        // Loops
+        int [] numbers = {2, 0, 1, 3, 100, 79, 4, 90, 77};
+        String [] names = {"Lovette", "Stega"};
+
+        Arrays.stream(numbers).forEach(System.out::println);
+        Arrays.stream(names).forEach(System.out::println);
+
+
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
     }
 
 //    static class Person {
