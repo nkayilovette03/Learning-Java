@@ -241,13 +241,23 @@ public class Main {
 
         // Understanding Methods
         char [] letters = {'A', 'A', 'B', 'C', 'D', 'D', 'D'};
-        int count = countOccurrences(letters);
+        int count = countOccurrences(letters, 'Z');
         System.out.println(count);
     }
 
-    public static int countOccurrences (char [] letters) {
-        System.out.println("method countOccurrences was invoked");
-        return 1;
+    public static int countOccurrences (char [] letters, char searchLetter) {
+//        System.out.println("method countOccurrences was invoked");
+//        System.out.println(Arrays.toString(letters));
+//        System.out.println(searchLetter);
+
+        int count = 0;
+
+        for (char letter: letters) {
+           if(letter == searchLetter) {
+               count ++;
+           }
+        };
+        return count;
     }
 
 //    static class Person {
