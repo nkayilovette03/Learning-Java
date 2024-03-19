@@ -83,7 +83,7 @@ public class Main {
 
         // Reserved Keywords
         // class, package, static, void, public, final
-            // Arithmetic Operations
+        // Arithmetic Operations
 //        int ten = 10;
 //        int two = 2;
 //
@@ -97,7 +97,7 @@ public class Main {
 //        System.out.println(multiply);
 //        System.out.println(modulus);
 
-    // Math
+        // Math
 //        System.out.println(Math.abs(-10));
 //        System.out.println(Math.max(-10, 2.5));
 //        System.out.println(Math.min(30, 25));
@@ -105,7 +105,7 @@ public class Main {
 //        System.out.println((int) Math.sqrt(25));
 //        System.out.println(Math.PI);
 
-    // Comparison Operators
+        // Comparison Operators
 //        int lovette = 21;
 //        int loveline = 26;
 //
@@ -124,7 +124,7 @@ public class Main {
 //        System.out.println(!isAdult || isStudent);
 //        System.out.println((!isAdult && isStudent) && isMember);
 
-    // If statements
+        // If statements
 //    int age = 90;
 //
 //    if(age >= 18) {
@@ -135,7 +135,7 @@ public class Main {
 //        System.out.println("I am not an adult");
 //    }
 
-    // Ternary Operator
+        // Ternary Operator
 //    int age = 17;
 //
 //    String message = age >= 18 ?
@@ -145,7 +145,7 @@ public class Main {
 //                    "I am not an adult";
 //
 //        System.out.println(message);
-    // Switch Statement
+        // Switch Statement
 //        String gender = "FEMALE".toLowerCase();
 
 //        if(gender.equals("FEMALE")){
@@ -174,7 +174,7 @@ public class Main {
 //
 //        }
 
-    // Arrays
+        // Arrays
 //        int [] numbers = {2, 0, 1, 100, 36};
 //        String [] names = {"Lovette", "Desmond"};
 
@@ -240,25 +240,25 @@ public class Main {
 //        System.out.println(userName + " you were born in " + year);
 
         // Understanding Methods
-        char [] letters = {'A', 'A', 'B', 'C', 'D', 'D', 'D'};
-        int count = countOccurrences(letters, 'Z');
-        System.out.println(count);
-    }
-
-    public static int countOccurrences (char [] letters, char searchLetter) {
-//        System.out.println("method countOccurrences was invoked");
-//        System.out.println(Arrays.toString(letters));
-//        System.out.println(searchLetter);
-
-        int count = 0;
-
-        for (char letter: letters) {
-           if(letter == searchLetter) {
-               count ++;
-           }
-        };
-        return count;
-    }
+//        char [] letters = {'A', 'A', 'B', 'C', 'D', 'D', 'D'};
+//        int count = countOccurrences(letters, 'Z');
+//        System.out.println(count);
+//    }
+//
+//    public static int countOccurrences (char [] letters, char searchLetter) {
+////        System.out.println("method countOccurrences was invoked");
+////        System.out.println(Arrays.toString(letters));
+////        System.out.println(searchLetter);
+//
+//        int count = 0;
+//
+//        for (char letter: letters) {
+//           if(letter == searchLetter) {
+//               count ++;
+//           }
+//        };
+//        return count;
+//    }
 
 //    static class Person {
 //        String name;
@@ -266,5 +266,41 @@ public class Main {
 //        Person(String name) {
 //            this.name = name;
 //        }
-//    }
+
+        // Classes and Objects //
+        Lens lensOne = new Lens("sony", "85mm", true);
+        Lens lensTwo = new Lens("sony", "30mm", true);
+        Lens lensThree = new Lens("canon", "24-70mm", false);
+
+        System.out.println("Lens 1");
+        System.out.println(lensOne.brand);
+        System.out.println(lensOne.focalLength);
+        System.out.println(lensOne.isPrime);
+        System.out.println();
+
+        System.out.println("Lens 2");
+        System.out.println(lensTwo.brand);
+        System.out.println(lensTwo.focalLength);
+        System.out.println(lensTwo.isPrime);
+        System.out.println();
+
+        System.out.println("Lens 3");
+        System.out.println(lensThree.brand);
+        System.out.println(lensThree.focalLength);
+        System.out.println(lensThree.isPrime);
+        System.out.println();
+
+    }
+
+    static class Lens {
+        String brand;
+        String focalLength;
+        boolean isPrime;
+
+        Lens(String brand, String focalLength, boolean isPrime) {
+            this.brand = brand;
+            this.focalLength = focalLength;
+            this.isPrime = isPrime;
+        }
+    }
 }
